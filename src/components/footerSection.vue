@@ -1,6 +1,7 @@
 <template>
-  <div class="Copyright">
-    <p>©️2023 Altschooler ---- Jude Okeleke</p>
+  <div class="footer">
+    <p>©️2023 Jude Okeleke</p>
+    <p>AltSchool 3rd Semester Exam</p>
   </div>
 </template>
 
@@ -9,15 +10,19 @@ export default {};
 </script>
 
 <style>
-.copywrite {
-  height: 10vh;
-  background: #a5cfed;
+.footer {
+  position: fixed;
+  height: 8vh;
+  background: #31554c;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #4a9edb;
-}
-.copywrite > p {
+  justify-content: space-evenly;
+  color: whitesmoke;
   font-size: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
 }
 </style>

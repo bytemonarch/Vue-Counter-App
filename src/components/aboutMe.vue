@@ -1,53 +1,54 @@
 <template lang="">
-  <h3 class="about-me">About Me 👎</h3>
-  <ul class="about-info">
-    <li>
-      AltSchool ID: <span>{{ studentDetails.identification }}</span>
-    </li>
-    <li>
-      Full Name: <span> {{ studentDetails.fullName }}</span>
-    </li>
-    <li>
-      Phone Number: <span>{{ studentDetails.mobileNumber }}</span>
-    </li>
-    <li>
-      E-mail: <span>{{ studentDetails.email }}</span>
-    </li>
-    <li>
+  <h3 class="about-h">About Me</h3>
+  <div class="about">
+    <p>
+      Title: <span>{{ myDetails.title }}</span>
+    </p>
+    <p>
+      Full Name: <span> {{ myDetails.fullName }}</span>
+    </p>
+    <p>
+      Phone Number: <span>{{ myDetails.mobileNumber }}</span>
+    </p>
+    <p>
+      E-mail: <span>{{ myDetails.email }}</span>
+    </p>
+    <p>
       Portfolio:
-      <a class="portfolio" href="https://github.com/judeokeleke/">{{
-        studentDetails.portfolioWebsite
-      }}</a>
-    </li>
-  </ul>
+      <a
+        class="portfolio"
+        href="https://github.com/judeokeleke"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ myDetails.portfolioWebsite }}</a
+      >
+    </p>
+  </div>
 </template>
 <script setup>
 import { reactive } from "@vue/reactivity";
-
-const studentDetails = reactive({
+// eslint-disable-next-line no-unused-vars
+const myDetails = reactive({
   fullName: "Jude Okeleke",
-  school: "AltSchool",
-  identification: "ALT/SOE/022/3013",
+  title: "FrontEnd Developer",
   email: "jiokeleke@gmail.com",
   mobileNumber: "+2348107415365",
-  portfolioWebsite: "My Portfolio",
+  portfolioWebsite: "click me",
 });
 </script>
 <style>
-.about-info {
+.about {
   padding-left: 10px;
-  color: rgb(81, 71, 71);
-  font-weight: 200;
+  color: #32355c;
+  font-weight: 400;
 }
 .portfolio {
   text-decoration: none;
-  color: rgb(81, 71, 71);
+  color: #32355c;
 }
-.about-me {
-  color: white;
+.about-h {
+  color: #32355c;
 }
-li {
-  margin-top: 16px;
-  margin-left: 10px;
+@media screen and (max-width: 600px) {
 }
 </style>

@@ -1,4 +1,4 @@
-# altschool-third-semester-exam
+# app
 
 ## Project setup
 ```
@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+link https://counter-ce043.web.app/
